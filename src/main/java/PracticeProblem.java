@@ -24,4 +24,16 @@ public class PracticeProblem {
 		//Write question 5 code here
 	}
 
+	public static int towerOfHanoi(int a) {
+		if (a == 3) {
+			return 7; 
+		}
+
+		if (a < 3) {
+			return -1;
+		}
+
+		return (2 * towerOfHanoi(a - 1)) + 1;
+	}
+
 }
